@@ -1,0 +1,286 @@
+
+:root {
+    --white: #ffffff;
+    --whitesmoke: #F5F5F5;
+    --black: #000000;
+    --black-footer: rgba(255, 255, 255, 0.6);
+    --blue: #2196F3;
+    --grey : #757575;
+    --nero: #212121;
+    --black-rock: #2F303A;
+}
+
+/* Загальні правила проєкту */
+body {
+    font-family: Roboto, sans-serif;
+    color: var(--nero);
+    background-color: var(--white);
+}
+
+/* Заголовок */
+.site-top {
+background-color: var(--white);
+}
+
+.site-top-logo {
+    color: var(--black);
+    font-weight: 700;
+    font-family: Raleway, sans-serif;
+    text-decoration: none;
+    line-height: 1.2;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+}
+
+.site-top-name {
+    color: var(--blue);
+    font-weight: 700;
+}
+
+.site-top-dots {
+    list-style: none;
+}
+
+.site-top-link {
+    color: var(--nero);
+    font-weight: 500;
+    text-decoration: none;
+    line-height: 1.14;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+}
+
+.site-top-link:hover,
+.site-top-link:focus {
+    color: var(--blue);
+}
+
+.site-top-link.current{
+    color: var(--blue);
+}
+
+.site-top-email {
+    color: var(--grey);
+    font-weight: 500;
+    line-height: 1.14;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+}
+
+.site-top-email:hover,
+.site-top-email:focus {
+    color: var(--blue);
+}
+
+.site-top-tel {
+    color: var(--grey);
+    font-weight: 500;
+    line-height: 1.14;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+}
+
+.site-top-tel:hover,
+.site-top-tel:focus {
+    color: var(--blue);
+}
+
+
+/* Основная часть индец */
+.order {
+    background-color: var(--black-rock);
+}
+
+.order-text {
+    font-weight: 900;
+    line-height: 1.36;
+    color: var(--white);
+    font-size: 44px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.order-bt {
+    font-family: inherit;
+    color: var(--white);
+    background-color: var(--blue);
+    font-weight: 700;
+    line-height: 1.88;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+.order-bt:hover {
+    cursor: pointer;
+}
+
+.order-bt:focus {
+    visibility: hidden;
+}
+
+.spacials-dots {
+    list-style: none;
+}
+
+.spacials-tittle {
+    color: var(--nero);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.spacials-text {
+    color: var(--grey);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+.presentation-tittle,
+.team-tittle {
+    color: var(--nero);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.presentation-dots {
+    list-style: none;
+}
+
+.team {
+    background-color: #F5F4FA;
+}
+
+.team-dots {
+    list-style: none;
+}
+
+.team-name {
+    color: var(--nero);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.team-job {
+    color: var(--grey);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+
+/* Основная часть портфолио */
+.portfolio {
+    background-color: var(--white);
+}
+
+.portfolio-nav,
+.portfolio-projects {
+    list-style: none;
+}
+
+.portfolio-bt {
+    color: var(--nero);
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.portfolio-bt:hover,
+.portfolio-bt:focus {
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+.portfolio-picture {
+    color: var(--nero);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.portfolio-text {
+    color: var(--grey);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+}
+
+
+/* Футтер нашого сайту */
+.footr {
+    background-color: var(--black-rock);
+}
+
+.footr-logo {
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--white);
+    text-decoration: none;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.footr-name {
+    color: var(--blue);
+    font-weight: 700;
+}
+
+.footr-dots {
+    list-style: none;
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.footr-address {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.footr-email {
+    font-style: normal;
+    color: var(--black-footer);
+    text-decoration: none;
+}
+
+.footr-email:hover,
+.footr-email:focus {
+    color: var(--blue);
+}
+
+.footr-telefone {
+    font-style: normal;
+    color: var(--black-footer);
+    text-decoration: none;
+}
+
+.footr-telefone:hover,
+.footr-telefone:focus {
+    color: var(--blue);
+}
