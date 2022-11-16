@@ -9,29 +9,41 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Шапка -->
     <header class="site-top">
-      <a href="./index.html" class="site-top-logo" lang="en"
-        ><span class="site-top-name">Web</span>Studio</a
-      >
-      <nav>
+      <div class="container">
+        <a href="./index.html" class="site-top-logo" lang="en"
+          ><span class="site-top-name">Web</span>Studio</a
+        >
+        <nav class="main-nav">
+          <ul class="site-top-dots">
+            <li class="item">
+              <a class="site-top-link current" href="./index.html">Студія</a>
+            </li>
+            <li class="item">
+              <a class="site-top-link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="item">
+              <a class="site-top-link" href="/">Контакти</a>
+            </li>
+          </ul>
+        </nav>
         <ul class="site-top-dots">
-          <li>
-            <a class="site-top-link current" href="./index.html">Студія</a>
+          <li class="item">
+            <a class="site-top-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
-          <li>
-            <a class="site-top-link" href="./portfolio.html">Портфоліо</a>
-          </li>
-          <li>
-            <a class="site-top-link" href="/">Контакти</a>
+          <li class="item">
+            <a class="site-top-tel" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
-      </nav>
-      <a class="site-top-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
-      <a class="site-top-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+      </div>
     </header>
 
     <!-- Інформація з замовлення послуг -->
@@ -43,32 +55,34 @@
 
       <!-- Особливості -->
       <section class="spacials">
-        <ul class="spacials-dots">
-          <li>
-            <h3 class="spacials-tittle">УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p class="spacials-text">
-              Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
-            </p>
-          </li>
-          <li>
-            <h3 class="spacials-tittle">ПУНКТУАЛЬНІСТЬ</h3>
-            <p class="spacials-text">
-              Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
-            </p>
-          </li>
-          <li>
-            <h3 class="spacials-tittle">ПЛАНУВАННЯ</h3>
-            <p class="spacials-text">
-              Так само консультація з широким активом значною мірою зумовлює.
-            </p>
-          </li>
-          <li>
-            <h3 class="spacials-tittle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p class="spacials-text">
-              Значимість цих проблем настільки очевидна, що реалізація планових завдань.
-            </p>
-          </li>
-        </ul>
+        <div class="container">
+          <ul class="spacials-dots box">
+            <li>
+              <h3 class="spacials-tittle">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="spacials-text">
+                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+              </p>
+            </li>
+            <li>
+              <h3 class="spacials-tittle">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="spacials-text">
+                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+              </p>
+            </li>
+            <li>
+              <h3 class="spacials-tittle">ПЛАНУВАННЯ</h3>
+              <p class="spacials-text">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li>
+              <h3 class="spacials-tittle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="spacials-text">
+                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- Чим ми займаємось -->
@@ -145,22 +159,26 @@
 
     <!-- Підвал -->
     <footer class="footr">
-      <a class="footr-logo" href="/"><span class="footr-name">Web</span>Studio</a>
-      <address>
-        <ul class="footr-dots">
-          <li>
-            <a class="footr-address" href="https://www.google.com/maps/preview"
-              >м. Київ, пр-т Лесі Українки, 26</a
-            >
-          </li>
-          <li>
-            <a class="footr-email" href="mailto:">info@devstudio.com</a>
-          </li>
-          <li>
-            <a class="footr-telefone" href="tel:+380961111111">+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </address>
+      <div>
+        <a class="footr-logo" href="/"><span class="footr-name">Web</span>Studio</a>
+      </div>
+      <div>
+        <address>
+          <ul class="footr-dots">
+            <li>
+              <a class="footr-address" href="https://www.google.com/maps/preview"
+                >м. Київ, пр-т Лесі Українки, 26</a
+              >
+            </li>
+            <li>
+              <a class="footr-email" href="mailto:">info@devstudio.com</a>
+            </li>
+            <li>
+              <a class="footr-telefone" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
