@@ -18,45 +18,53 @@
   <body>
     <!-- Шапка -->
     <header class="site-top">
-      <div class="container">
-        <a href="./index.html" class="site-top-logo" lang="en"
-          ><span class="site-top-name">Web</span>Studio</a
-        >
-        <nav class="main-nav">
+      <div class="container top">
+        <div class="">
+          <a href="./index.html" class="site-top-logo" lang="en"
+            ><span class="site-top-name">Web</span>Studio</a
+          >
+        </div>
+        <div>
+          <nav class="main-nav">
+            <ul class="site-top-dots">
+              <li class="item">
+                <a class="site-top-link" href="./index.html">Студія</a>
+              </li>
+              <li class="item">
+                <a class="site-top-link current" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="item">
+                <a class="site-top-link" href="/">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div>
           <ul class="site-top-dots">
             <li class="item">
-              <a class="site-top-link current" href="./index.html">Студія</a>
+              <a class="site-top-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
             <li class="item">
-              <a class="site-top-link" href="./portfolio.html">Портфоліо</a>
-            </li>
-            <li class="item">
-              <a class="site-top-link" href="/">Контакти</a>
+              <a class="site-top-tel" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
           </ul>
-        </nav>
-        <ul class="site-top-dots">
-          <li class="item">
-            <a class="site-top-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
-          <li class="item">
-            <a class="site-top-tel" href="tel:+380961111111">+38 096 111 11 11</a>
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
 
     <!-- Портфоліо -->
     <main class="portfolio">
       <section>
-        <h1>Що ми пропонуємо</h1>
-        <ul class="portfolio-nav">
-          <li><button class="portfolio-bt" type="button" name="Усі">Усі</button></li>
-          <li><button class="portfolio-bt" type="button" name="Усі">Веб-сайт</button></li>
-          <li><button class="portfolio-bt" type="button" name="Усі">Додатки</button></li>
-          <li><button class="portfolio-bt" type="button" name="Усі">Дизайн</button></li>
-          <li><button class="portfolio-bt" type="button" name="Усі">Маркетинг</button></li>
-        </ul>
+        <h1 class="visually-hidden">Що ми пропонуємо</h1>
+        <div class="portfolio-box">
+          <ul class="portfolio-nav">
+            <li><button class="portfolio-bt" type="button" name="Усі">Усі</button></li>
+            <li><button class="portfolio-bt" type="button" name="Усі">Веб-сайт</button></li>
+            <li><button class="portfolio-bt" type="button" name="Усі">Додатки</button></li>
+            <li><button class="portfolio-bt" type="button" name="Усі">Дизайн</button></li>
+            <li><button class="portfolio-bt" type="button" name="Усі">Маркетинг</button></li>
+          </ul>
+        </div>
         <ul class="portfolio-projects">
           <li>
             <img src="./img/portfolio1.jpg" alt="Технокряк" width="370" height="294" />
