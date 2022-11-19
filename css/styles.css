@@ -14,15 +14,13 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p,
+ul
+ {
   padding: 0;
   margin: 0;
 }  
-
-p,
-ul {
-  padding: 0;
-}
 
 .container {
     width: 1200px;
@@ -32,15 +30,26 @@ ul {
     margin-right: auto;
 }
 
+.flex {
+  display: flex;
+  align-items: center
+}
+
 .card-set {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.box {
+.section {
   margin-top: 94px;
   margin-bottom: 94px;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .visually-hidden {
@@ -77,7 +86,6 @@ body {
 
 .site-top-logo {
   color: var(--black);
-  font-weight: 700;
   font-family: Raleway, sans-serif;
   text-decoration: none;
   line-height: 1.2;
@@ -85,22 +93,20 @@ body {
   letter-spacing: 0.03em;
 
   margin-right: 93px;
+  box-sizing: content-box;
 }
 
 .site-top-name {
   color: var(--blue);
-  font-weight: 700;
 }
+
 
 .site-top-dots {
   display: flex;
   list-style: none;
   margin-left: auto;
-}
-
-.container {
-    display: flex;
-    align-items: center
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .site-top-dots .item {
@@ -160,14 +166,14 @@ body {
 /* Основная часть индец */
 
 
-.order {
+.hero {
   background-color: var(--black-rock);
   text-align: center;
-
-  display: block;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
-.order-text {
+.hero-text {
   font-weight: 900;
   line-height: 1.36;
   color: var(--white);
@@ -176,11 +182,13 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  padding-top: 120px;
+  max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
 }
 
-.order-bt {
+.hero-bt {
   font-family: inherit;
   color: var(--white);
   border: var(--blue);
@@ -191,28 +199,25 @@ body {
   letter-spacing: 0.06em;
 
   border-radius: 4px;
-  margin-bottom: 200px;
   padding: 10px 32px;
 }
 
-.order-bt:hover {
+.hero-bt:hover {
   cursor: pointer;
 }
 
-.order-bt:focus {
+.hero-bt:focus {
   visibility: hidden;
 }
 
 .spacials-dots {
-  list-style: none;
-
   display: flex;
+  gap: 30px;
 }
 
 .spacials-tittle {
   color: var(--nero);
   font-size: 14px;
-  font-weight: 700;
   line-height: 1.14;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -228,6 +233,10 @@ body {
   line-height: 1.71;
   font-size: 14px;
   letter-spacing: 0.03em;
+}
+
+.presentation {
+  padding-top: 0;
 }
 
 .presentation-tittle,
@@ -262,7 +271,6 @@ body {
 .team-name {
   color: var(--nero);
   font-size: 16px;
-  font-weight: 500;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
@@ -353,7 +361,6 @@ body {
 .footr-logo {
   font-family: Raleway;
   font-size: 26px;
-  font-weight: 700;
   color: var(--white);
   text-decoration: none;
   line-height: 1.19;
@@ -366,7 +373,6 @@ body {
 
 .footr-name {
   color: var(--blue);
-  font-weight: 700;
 }
 
 .footr-dots {
