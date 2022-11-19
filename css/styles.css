@@ -19,7 +19,6 @@ p,
 ul
  {
   padding: 0;
-  margin: 0;
 }  
 
 .container {
@@ -39,6 +38,7 @@ ul
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+
 }
 
 .section {
@@ -309,9 +309,17 @@ body {
     justify-content: center;
 
     list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    gap: 8px;
+}
+
+.portfolio-box {
+  padding-bottom: 16px;
 }
 
 .portfolio-bt {
+  font-style: inherit;
   color: var(--nero);
   border: var(--nero);
   cursor: pointer;
@@ -324,25 +332,36 @@ body {
   display: inline-block;
   padding: 6px 22px;
   border-radius: 4px;
-  min-width: 125px;
   text-align: center;
 }
 
-.portfolio-bt:not(last-child) {
-    margin-right: 8px;
+.one {
+  padding: 6px 25px;
 }
+.two {
+  padding: 6px 27px;
+}
+
+
 
 .portfolio-bt:hover,
 .portfolio-bt:focus {
   color: var(--white);
   border: var(--blue);
   background-color: var(--blue);
-  padding: 6px 25px;
 }
 
 .portfolio-projects {
   list-style: none;
 }
+
+.card-item {
+  padding-top: 20px;
+  padding-bottom: 20px;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+} 
 
 .portfolio-picture {
   color: var(--nero);
@@ -350,6 +369,8 @@ body {
   font-weight: 700;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
+  margin-top: 0;
 }
 
 .portfolio-text {
@@ -358,6 +379,8 @@ body {
   font-weight: 400;
   line-height: 1.88;
   letter-spacing: 0.03em;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 /* Футтер нашого сайту */
@@ -367,6 +390,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-a {
+  margin-bottom: 20px;
 }
 
 .footr-logo {
@@ -376,10 +405,6 @@ body {
   text-decoration: none;
   line-height: 1.19;
   letter-spacing: 0.03em;
-
-  display: flex;
-  padding-top: 60px;
-  margin-bottom: 20px;
 }
 
 .footr-name {
@@ -387,33 +412,37 @@ body {
 }
 
 .footr-dots {
-  list-style: none;
-  font-weight: 400;
-  font-size: 14px;
-  font-style: normal;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
   text-decoration: none;
+  list-style: none;
 
   display: flex;
   flex-direction: column;
-  padding-bottom: 60px;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .footr-address {
+  list-style: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-style: normal;
   color: var(--white);
   text-decoration: none;
-
-  margin-bottom: 9px;
 }
 
 .footr-email {
+  list-style: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   font-style: normal;
   color: var(--black-footer);
   text-decoration: none;
 
-  margin-bottom: 9px;
+  gap: 9px;
 }
 
 .footr-email:hover,
@@ -422,6 +451,11 @@ body {
 }
 
 .footr-telefone {
+  list-style: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   font-style: normal;
   color: var(--black-footer);
   text-decoration: none;
