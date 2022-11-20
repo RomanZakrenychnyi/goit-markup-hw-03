@@ -410,6 +410,14 @@ body {
   padding-bottom: 60px;
 }
 
+.footr li {
+  height: 21px;
+}
+
+.footr li:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .footer-a {
   margin-bottom: 20px;
 }
@@ -457,8 +465,6 @@ body {
   font-style: normal;
   color: var(--black-footer);
   text-decoration: none;
-
-  gap: 9px;
 }
 
 .footr-email:hover,
