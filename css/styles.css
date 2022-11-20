@@ -109,10 +109,14 @@ body {
   display: flex;
   list-style: none;
   margin-left: auto;
-  padding-top: 32px;
-  padding-bottom: 32px;
+
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.site-top-dots a {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .site-top-dots .item {
@@ -267,6 +271,10 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   line-height: 0;
+}
+
+.team.section li {
+  flex-basis: auto;
 }
 
 .team {
