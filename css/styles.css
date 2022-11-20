@@ -15,7 +15,12 @@ h3,
 h4,
 h5,
 h6,
-p,
+p
+ {
+  padding: 0;
+  margin: 0;
+}  
+
 ul
  {
   padding: 0;
@@ -42,8 +47,8 @@ ul
 }
 
 .section {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .list {
