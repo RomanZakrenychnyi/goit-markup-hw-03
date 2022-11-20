@@ -112,6 +112,8 @@ body {
   margin-left: auto;
   padding-top: 32px;
   padding-bottom: 32px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .site-top-dots .item {
@@ -168,7 +170,7 @@ body {
   color: var(--blue);
 }
 
-/* Основная часть индец */
+/* Основная часть hero */
 
 
 .hero {
@@ -207,12 +209,10 @@ body {
   padding: 10px 32px;
 }
 
-.hero-bt:hover {
-  cursor: pointer;
-}
-
+.hero-bt:hover,
 .hero-bt:focus {
-  visibility: hidden;
+  cursor: pointer;
+  background-color: #188CE8;
 }
 
 .spacials-dots {
