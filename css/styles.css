@@ -372,6 +372,10 @@ body {
   margin-bottom: 0;
 }
 
+.portfolio-list {
+  flex-basis: auto;
+}
+
 .card-item {
   padding: 20px 24px;
   border-left: 1px solid #EEEEEE;
