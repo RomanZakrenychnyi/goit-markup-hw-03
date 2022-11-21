@@ -140,6 +140,7 @@ body {
 
 .site-top-email,
 .site-top-tel {
+  display: flex;
   color: var(--grey);
   font-weight: 500;
   line-height: 1.14;
@@ -196,8 +197,8 @@ body {
   padding: 10px 32px;
 }
 
-.hero-bt:hover,
-.hero-bt:focus {
+.hero-btn:hover,
+.hero-btn:focus {
   cursor: pointer;
   background-color: #188CE8;
 }
@@ -208,7 +209,7 @@ body {
 }
 
 .spacials-list {
-  flex-basis: calc((100%-30*3) / 4);
+  flex-basis: calc((100% - 30px * 3 ) / 4);
 }
 
 .spacials-tittle {
@@ -234,7 +235,6 @@ body {
 
 .presentation {
   padding-top: 0;
-  padding-bottom: 0;
 }
 
 .presentation-tittle,
@@ -261,7 +261,7 @@ body {
 }
 
 .presentation-list {
-  flex-basis: calc((100%-30*2) / 3);
+  flex-basis: calc(( 100% - 30px * 2) / 3);
 }
 
 .team {
@@ -270,7 +270,7 @@ body {
 }
 
 .team-list {
-  flex-basis: calc((100%-30*3) / 4);
+  flex-basis: calc(( 100% - 30px * 3) / 4);
 }
 
 .team-area {
@@ -320,7 +320,7 @@ body {
 }
 
 /* .portfolio-nav-list {
-  flex-basis: calc((100%-8*4) / 5)
+  flex-basis: calc((100% - 8px * 4 ) / 5)
 } */
 
 .portfolio-box {
@@ -357,7 +357,7 @@ body {
 }
 
 .portfolio-list {
-  flex-basis: auto;
+  flex-basis: calc((100% - 30px * 2) / 3)
 }
 
 .card-item {
